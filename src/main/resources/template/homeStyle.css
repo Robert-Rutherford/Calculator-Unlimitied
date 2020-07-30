@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    background-color: #6E5D69;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+    text-align: center;
+    /*height: 500vh;*/
+}
+
+#main-page{
+    /*min-height: 100%;*/
+}
+
+#main-row{
+    min-height: 100vh;
+}
+
+#toolBar, #loadLog{
+    background-color: #B8B99A;
+    width: .3fr;
+}
+
+
+.footer {
+    background-color: #513E4C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /*margin-top: 1em;*/
+
+}
+.noMatchInfo{
+    display: none;
+}
+
+#nav-Bar, .modalHeaderCustom{
+    background-color: #513E4C;
+    color: #DBDEB2 !important;
+}
+
+.CloseCustom{
+    color: gold;
+}
+
+.modalBodyCustom{
+    background-color: #B8B99A;
+}
+
+.sameButtonWidth{
+    width: 120px;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+
+.cardDescription{
+    height: 70px;
+    overflow-y: auto;
+}
+
