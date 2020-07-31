@@ -7,7 +7,10 @@ import java.util.List;
 public class Calculations {
 //    testing functions
     public static void main(String[] args) {
-
+        System.out.println(Arrays.toString(seperateFormula("45+3.85")));
+        System.out.println();
+        System.out.println(Arrays.toString(seperateFormula("(45+3.85)/(23-1)")));
+        System.out.println();
     }
 
     private String calculateFunction(String formula){
@@ -96,7 +99,7 @@ public class Calculations {
         return priorityIndex == 0;
     }
 
-    private String[] seperateFormula(String formula){
+    private static String[] seperateFormula(String formula){
 
         String number = "";
         int index = 0;
@@ -122,7 +125,11 @@ public class Calculations {
                 builderList[index] = number;
                 index++;
                 number = "";
+                numberGroup = false;
             }
+        }
+        if (numberGroup){
+            builderList[index] = number;
         }
 
         List<String> listCleaner = new ArrayList<String>();
