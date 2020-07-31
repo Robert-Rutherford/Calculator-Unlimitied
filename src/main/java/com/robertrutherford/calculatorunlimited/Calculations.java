@@ -1,5 +1,9 @@
 package com.robertrutherford.calculatorunlimited;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Calculations {
 //    testing functions
     public static void main(String[] args) {
@@ -92,14 +96,47 @@ public class Calculations {
         return priorityIndex == 0;
     }
 
-    private char[] seperateFormula(String formula){
-        char[] splitFormula;
+    private String[] seperateFormula(String formula){
 
+        String number = "";
+        int index = 0;
+        String[] builderList = new String[formula.length()];
+        boolean numberGroup = false;
 
+        for (int i = 0; i < formula.length(); i++){
+            boolean numberDouble = Character.isDigit(formula.charAt(i)) || formula.charAt(i) == '.';
+            if (numberDouble){
+                if (!numberGroup){
+                    numberGroup = true;
+                }
+                number = number + formula.charAt(i);
+            }
+            else {
+//              for simple math systems no sin, cos, tan functions yet
+                if (numberGroup){
+                    builderList[index] = number;
+                    index++;
+                    number = "";
+                }
+                number = number + formula.charAt(i);
+                builderList[index] = number;
+                index++;
+                number = "";
+            }
+        }
 
+        List<String> listCleaner = new ArrayList<String>();
+        for(String str : builderList) {
+            if(str != null) {
+                listCleaner.add(str);
+            }
+        }
 
-        return splitFormula;
+//        String[] splitFormula = listCleaner.toArray(new String[listCleaner.size()]);
+
+        return Arrays.stream(builderList)
+                .filter(s -> (s != null && s.length() > 0))
+                .toArray(String[]::new);
     }
-
 
 }
