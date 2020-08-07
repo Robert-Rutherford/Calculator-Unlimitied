@@ -13,6 +13,52 @@ public class Calculations {
         System.out.println();
     }
 
+    private static String[] seperateFormula(String formula) {
+
+        String number = "";
+        int index = 0;
+        String[] builderList = new String[formula.length()];
+        boolean numberGroup = false;
+
+        for (int i = 0; i < formula.length(); i++) {
+            boolean numberDouble = Character.isDigit(formula.charAt(i)) || formula.charAt(i) == '.';
+            if (numberDouble) {
+                if (!numberGroup) {
+                    numberGroup = true;
+                }
+                number = number + formula.charAt(i);
+            } else {
+//              for simple math systems no sin, cos, tan functions yet
+                if (numberGroup) {
+                    builderList[index] = number;
+                    index++;
+                    number = "";
+                }
+                number = number + formula.charAt(i);
+                builderList[index] = number;
+                index++;
+                number = "";
+                numberGroup = false;
+            }
+        }
+        if (numberGroup) {
+            builderList[index] = number;
+        }
+
+        List<String> listCleaner = new ArrayList<String>();
+        for (String str : builderList) {
+            if (str != null) {
+                listCleaner.add(str);
+            }
+        }
+
+//        String[] splitFormula = listCleaner.toArray(new String[listCleaner.size()]);
+
+        return Arrays.stream(builderList)
+                .filter(s -> (s != null && s.length() > 0))
+                .toArray(String[]::new);
+    }
+
     private String calculateFunction(String formula) {
 
         if (!validFunction(formula).equalsIgnoreCase("true")) {
@@ -101,52 +147,6 @@ public class Calculations {
 
         }
         return priorityIndex == 0;
-    }
-
-    private static String[] seperateFormula(String formula) {
-
-        String number = "";
-        int index = 0;
-        String[] builderList = new String[formula.length()];
-        boolean numberGroup = false;
-
-        for (int i = 0; i < formula.length(); i++) {
-            boolean numberDouble = Character.isDigit(formula.charAt(i)) || formula.charAt(i) == '.';
-            if (numberDouble) {
-                if (!numberGroup) {
-                    numberGroup = true;
-                }
-                number = number + formula.charAt(i);
-            } else {
-//              for simple math systems no sin, cos, tan functions yet
-                if (numberGroup) {
-                    builderList[index] = number;
-                    index++;
-                    number = "";
-                }
-                number = number + formula.charAt(i);
-                builderList[index] = number;
-                index++;
-                number = "";
-                numberGroup = false;
-            }
-        }
-        if (numberGroup) {
-            builderList[index] = number;
-        }
-
-        List<String> listCleaner = new ArrayList<String>();
-        for (String str : builderList) {
-            if (str != null) {
-                listCleaner.add(str);
-            }
-        }
-
-//        String[] splitFormula = listCleaner.toArray(new String[listCleaner.size()]);
-
-        return Arrays.stream(builderList)
-                .filter(s -> (s != null && s.length() > 0))
-                .toArray(String[]::new);
     }
 
 }
