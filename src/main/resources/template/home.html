@@ -2,23 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!--    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"-->
-<!--          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet">-->
-<!--    <script crossorigin="anonymous"-->
-<!--            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
-<!--            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
-<!--    <script crossorigin="anonymous"-->
-<!--            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"-->
-<!--            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>-->
-<!--    <script crossorigin="anonymous"-->
-<!--            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"-->
-<!--            src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>-->
-<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet">-->
+    <!--    <script crossorigin="anonymous"-->
+    <!--            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+    <!--            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+    <!--    <script crossorigin="anonymous"-->
+    <!--            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"-->
+    <!--            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>-->
+    <!--    <script crossorigin="anonymous"-->
+    <!--            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"-->
+    <!--            src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>-->
+    <!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="homeStyle.css">
+    <link href="homeStyle.css" rel="stylesheet">
 
     <title>Calculator Unlimited</title>
 </head>
@@ -74,50 +75,62 @@
                 <!--                    initial load-->
                 <h1>
 
-<!--                    <div class="spinner-border" role="status">-->
-<!--                        <span class="sr-only">Loading...</span>-->
-<!--                    </div>-->
+                    <!--                    <div class="spinner-border" role="status">-->
+                    <!--                        <span class="sr-only">Loading...</span>-->
+                    <!--                    </div>-->
                     <div class="card text-center">
                         <div class="card-header">
 
                         </div>
-<!--                        <div class="card-body">-->
-<!--                            <h5 class="card-title">Special title treatment</h5>-->
-<!--                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-<!--                            <a href="#" class="btn btn-primary">Go somewhere</a>-->
-<!--                        </div>-->
+                        <!--                        <div class="card-body">-->
+                        <!--                            <h5 class="card-title">Special title treatment</h5>-->
+                        <!--                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                        <!--                            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        <!--                        </div>-->
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item text-right text-dark" id="padLog">0</li>
-                            <li class="list-group-item"><button type="button" class="btn btn-secondary btn-sm">Small button</button></li>
-                            <li class="list-group-item"><div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">AC</button>
-                                <button type="button" class="btn btn-secondary">+/-</button>
-                                <button type="button" class="btn btn-secondary">%</button>
-                                <button type="button" class="btn btn-warning">/</button>
-                            </div></li>
-                            <li class="list-group-item"><div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">7</button>
-                                <button type="button" class="btn btn-secondary">8</button>
-                                <button type="button" class="btn btn-secondary">9</button>
-                                <button type="button" class="btn btn-warning">x</button>
-                            </div></li>
-                            <li class="list-group-item"><div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">4</button>
-                                <button type="button" class="btn btn-secondary">5</button>
-                                <button type="button" class="btn btn-secondary">6</button>
-                                <button type="button" class="btn btn-warning">-</button>
-                            </div></li>
-                            <li class="list-group-item"><div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">1</button>
-                                <button type="button" class="btn btn-secondary">2</button>
-                                <button type="button" class="btn btn-secondary">3</button>
-                                <button type="button" class="btn btn-warning">+</button>
-                            </div></li>
-                            <li class="list-group-item"><div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">0</button>
-                                <button type="button" class="btn btn-secondary">.</button>
-                                <button type="button" class="btn btn-warning">=</button>
-                            </div></li>
+                            <li class="list-group-item">
+                                <button class="btn btn-secondary btn-sm" type="button">Small button</button>
+                            </li>
+                            <li class="list-group-item">
+                                <div aria-label="Basic example" class="btn-group" role="group">
+                                    <button class="btn btn-secondary" type="button">AC</button>
+                                    <button class="btn btn-secondary" type="button">+/-</button>
+                                    <button class="btn btn-secondary" type="button">%</button>
+                                    <button class="btn btn-warning" type="button">/</button>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div aria-label="Basic example" class="btn-group" role="group">
+                                    <button class="btn btn-secondary" type="button">7</button>
+                                    <button class="btn btn-secondary" type="button">8</button>
+                                    <button class="btn btn-secondary" type="button">9</button>
+                                    <button class="btn btn-warning" type="button">x</button>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div aria-label="Basic example" class="btn-group" role="group">
+                                    <button class="btn btn-secondary" type="button">4</button>
+                                    <button class="btn btn-secondary" type="button">5</button>
+                                    <button class="btn btn-secondary" type="button">6</button>
+                                    <button class="btn btn-warning" type="button">-</button>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div aria-label="Basic example" class="btn-group" role="group">
+                                    <button class="btn btn-secondary" type="button">1</button>
+                                    <button class="btn btn-secondary" type="button">2</button>
+                                    <button class="btn btn-secondary" type="button">3</button>
+                                    <button class="btn btn-warning" type="button">+</button>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div aria-label="Basic example" class="btn-group" role="group">
+                                    <button class="btn btn-secondary" type="button">0</button>
+                                    <button class="btn btn-secondary" type="button">.</button>
+                                    <button class="btn btn-warning" type="button">=</button>
+                                </div>
+                            </li>
 
                         </ul>
                     </div>
@@ -152,10 +165,17 @@
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
 </body>
