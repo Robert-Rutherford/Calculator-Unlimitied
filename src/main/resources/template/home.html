@@ -78,61 +78,95 @@
                     <!--                    <div class="spinner-border" role="status">-->
                     <!--                        <span class="sr-only">Loading...</span>-->
                     <!--                    </div>-->
+
                     <div class="card text-center">
                         <div class="card-header">
-
                         </div>
-                        <!--                        <div class="card-body">-->
-                        <!--                            <h5 class="card-title">Special title treatment</h5>-->
-                        <!--                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-                        <!--                            <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                        <!--                        </div>-->
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-right text-dark" id="padLog">0</li>
-                            <li class="list-group-item">
-                                <button class="btn btn-secondary btn-sm" type="button">Small button</button>
-                            </li>
-                            <li class="list-group-item">
-                                <div aria-label="Basic example" class="btn-group" role="group">
-                                    <button class="btn btn-secondary" type="button">AC</button>
-                                    <button class="btn btn-secondary" type="button">+/-</button>
-                                    <button class="btn btn-secondary" type="button">%</button>
-                                    <button class="btn btn-warning" type="button">/</button>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div aria-label="Basic example" class="btn-group" role="group">
-                                    <button class="btn btn-secondary" type="button">7</button>
-                                    <button class="btn btn-secondary" type="button">8</button>
-                                    <button class="btn btn-secondary" type="button">9</button>
-                                    <button class="btn btn-warning" type="button">x</button>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div aria-label="Basic example" class="btn-group" role="group">
-                                    <button class="btn btn-secondary" type="button">4</button>
-                                    <button class="btn btn-secondary" type="button">5</button>
-                                    <button class="btn btn-secondary" type="button">6</button>
-                                    <button class="btn btn-warning" type="button">-</button>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div aria-label="Basic example" class="btn-group" role="group">
-                                    <button class="btn btn-secondary" type="button">1</button>
-                                    <button class="btn btn-secondary" type="button">2</button>
-                                    <button class="btn btn-secondary" type="button">3</button>
-                                    <button class="btn btn-warning" type="button">+</button>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div aria-label="Basic example" class="btn-group" role="group">
-                                    <button class="btn btn-secondary" type="button">0</button>
-                                    <button class="btn btn-secondary" type="button">.</button>
-                                    <button class="btn btn-warning" type="button">=</button>
-                                </div>
-                            </li>
+                            <div class="card-body">
+                                                    <h5 class="card-title text-right text-dark" id="padLog">0</h5>
+<!--                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--                                                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <td><button class="btn btn-secondary btn-block" type="button">AC</button></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">+/-</button></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">%</button></td>
+                                        <td><button class="btn btn-warning btn-block" type="button">/</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-secondary btn-block" type="button">7</button></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">8</button></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">9</button></td>
+                                        <td><button class="btn btn-warning btn-block" type="button">x</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-secondary btn-block" type="button">4</button></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">5</button></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">6</button></td>
+                                        <td><button class="btn btn-warning btn-block" type="button">-</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-secondary btn-block" type="button">1</button></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">2</button></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">3</button></td>
+                                        <td><button class="btn btn-warning btn-block" type="button">+</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">0</button></td>
+                                        <td><button class="btn btn-secondary btn-block" type="button">.</button></td>
+                                        <td><button class="btn btn-warning btn-block" type="button">=</button></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+<!--                        <ul class="list-group list-group-flush">-->
+<!--                            <li class="list-group-item text-right text-dark" id="padLog">0</li>-->
+<!--                            <li class="list-group-item">-->
+<!--                                <button class="btn btn-secondary btn-sm" type="button">Small button</button>-->
+<!--                            </li>-->
+<!--                            <li class="list-group-item">-->
+<!--                                <div aria-label="Basic example" class="btn-group" role="group">-->
+<!--                                    <button class="btn btn-secondary" type="button">AC</button>-->
+<!--                                    <button class="btn btn-secondary" type="button">+/-</button>-->
+<!--                                    <button class="btn btn-secondary" type="button">%</button>-->
+<!--                                    <button class="btn btn-warning" type="button">/</button>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="list-group-item">-->
+<!--                                <div aria-label="Basic example" class="btn-group" role="group">-->
+<!--                                    <button class="btn btn-secondary" type="button">7</button>-->
+<!--                                    <button class="btn btn-secondary" type="button">8</button>-->
+<!--                                    <button class="btn btn-secondary" type="button">9</button>-->
+<!--                                    <button class="btn btn-warning" type="button">x</button>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="list-group-item">-->
+<!--                                <div aria-label="Basic example" class="btn-group" role="group">-->
+<!--                                    <button class="btn btn-secondary" type="button">4</button>-->
+<!--                                    <button class="btn btn-secondary" type="button">5</button>-->
+<!--                                    <button class="btn btn-secondary" type="button">6</button>-->
+<!--                                    <button class="btn btn-warning" type="button">-</button>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="list-group-item">-->
+<!--                                <div aria-label="Basic example" class="btn-group" role="group">-->
+<!--                                    <button class="btn btn-secondary" type="button">1</button>-->
+<!--                                    <button class="btn btn-secondary" type="button">2</button>-->
+<!--                                    <button class="btn btn-secondary" type="button">3</button>-->
+<!--                                    <button class="btn btn-warning" type="button">+</button>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="list-group-item">-->
+<!--                                <div aria-label="Basic example" class="btn-group" role="group">-->
+<!--                                    <button class="btn btn-secondary" type="button">0</button>-->
+<!--                                    <button class="btn btn-secondary" type="button">.</button>-->
+<!--                                    <button class="btn btn-warning" type="button">=</button>-->
+<!--                                </div>-->
+<!--                            </li>-->
 
-                        </ul>
+<!--                        </ul>-->
                     </div>
                 </h1>
             </div>
